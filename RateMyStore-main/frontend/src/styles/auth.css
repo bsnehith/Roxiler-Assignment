@@ -1,0 +1,112 @@
+/* Auth Container */
+.auth-container {
+    width: 400px;
+    margin: 150px auto;
+    background: #ffffff;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+/* Fade-in and slide-up animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading */
+.auth-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Input and Select styles */
+.auth-container input, .auth-container select {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #71d7ee;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect for input fields */
+.auth-container input:focus, .auth-container select:focus {
+    border-color: #4bcfbe;
+    box-shadow: 0 0 8px rgba(75, 207, 190, 0.4);
+    outline: none;
+}
+
+/* Button Styles */
+.auth-container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #4bcfbe;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover effect */
+.auth-container button:hover {
+    background: #95e1d7;
+    transform: translateY(-3px);
+}
+
+/* Button Active effect */
+.auth-container button:active {
+    transform: translateY(1px);
+}
+
+/* Register Text */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on register text */
+.register-text a {
+    color: #d26c31;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on register link */
+.register-text a:hover {
+    text-decoration: underline;
+    color: #b65b25;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .auth-container {
+        width: 90%;
+        padding: 30px;
+    }
+    .auth-container h2 {
+        font-size: 24px;
+    }
+    .auth-container button {
+        font-size: 16px;
+    }
+}
